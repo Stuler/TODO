@@ -27,3 +27,10 @@
 
 
 <?php include "_partials/footer.php" ?>
+
+<!-- To DO:<br>
+
+Remove tasks<br>
+Assign task priority<br> 
+Mark task as done <br>
+->
