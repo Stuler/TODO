@@ -2,7 +2,8 @@
     "require": {
         "catfan/medoo": "^1.7",
         "joseph-lenton/php-error": "dev-master",
-        "filp/whoops": "^2.9"
+        "filp/whoops": "^2.9",
+        "dibi/dibi": "^4.2"
         
     }
 }

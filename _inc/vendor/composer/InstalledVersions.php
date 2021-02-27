@@ -30,7 +30,7 @@ private static $installed = array (
     'aliases' => 
     array (
     ),
-    'reference' => '9d7b3e858ac6bd2ae45f3c4fb278e350820c8d73',
+    'reference' => '1cc3a32ef25f0609f84fd86870e1393af3b33b99',
     'name' => '__root__',
   ),
   'versions' => 
@@ -42,7 +42,7 @@ private static $installed = array (
       'aliases' => 
       array (
       ),
-      'reference' => '9d7b3e858ac6bd2ae45f3c4fb278e350820c8d73',
+      'reference' => '1cc3a32ef25f0609f84fd86870e1393af3b33b99',
     ),
     'catfan/medoo' => 
     array (
@@ -52,6 +52,22 @@ private static $installed = array (
       array (
       ),
       'reference' => '2d675f73e23f63bbaeb9a8aa33318659a3d3c32f',
+    ),
+    'dg/dibi' => 
+    array (
+      'replaced' => 
+      array (
+        0 => '*',
+      ),
+    ),
+    'dibi/dibi' => 
+    array (
+      'pretty_version' => 'v4.2.0',
+      'version' => '4.2.0.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => 'ca744886361ad233d2ff948211c6e54befa59e42',
     ),
     'filp/whoops' => 
     array (
