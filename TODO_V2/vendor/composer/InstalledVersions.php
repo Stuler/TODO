@@ -25,16 +25,32 @@ class InstalledVersions
 private static $installed = array (
   'root' => 
   array (
-    'pretty_version' => 'v3.1.1',
-    'version' => '3.1.1.0',
+    'pretty_version' => 'dev-master',
+    'version' => 'dev-master',
     'aliases' => 
     array (
     ),
-    'reference' => NULL,
+    'reference' => 'b27ef1855ba91e749e2e368925b77c13d0e52810',
     'name' => 'nette/web-project',
   ),
   'versions' => 
   array (
+    'dg/dibi' => 
+    array (
+      'replaced' => 
+      array (
+        0 => '*',
+      ),
+    ),
+    'dibi/dibi' => 
+    array (
+      'pretty_version' => 'v4.2.0',
+      'version' => '4.2.0.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => 'ca744886361ad233d2ff948211c6e54befa59e42',
+    ),
     'latte/latte' => 
     array (
       'pretty_version' => 'v2.10.1',
@@ -208,12 +224,12 @@ private static $installed = array (
     ),
     'nette/web-project' => 
     array (
-      'pretty_version' => 'v3.1.1',
-      'version' => '3.1.1.0',
+      'pretty_version' => 'dev-master',
+      'version' => 'dev-master',
       'aliases' => 
       array (
       ),
-      'reference' => NULL,
+      'reference' => 'b27ef1855ba91e749e2e368925b77c13d0e52810',
     ),
     'symfony/thanks' => 
     array (
