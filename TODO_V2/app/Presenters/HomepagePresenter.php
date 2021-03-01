@@ -15,4 +15,11 @@ final class HomepagePresenter extends Nette\Application\UI\Presenter
 	{
 		$this->database = $database;
 	}
+
+    public function renderDefault(): void
+{
+	$this->template->items = $this->database->table('items')
+		->order('created_at DESC')
+		->limit(5);
+}
 }
