@@ -30,7 +30,7 @@ private static $installed = array (
     'aliases' => 
     array (
     ),
-    'reference' => 'b27ef1855ba91e749e2e368925b77c13d0e52810',
+    'reference' => '374a9b4da36ad63c850298ce17e6ba702f9fdb33',
     'name' => 'nette/web-project',
   ),
   'versions' => 
@@ -53,21 +53,21 @@ private static $installed = array (
     ),
     'latte/latte' => 
     array (
-      'pretty_version' => 'v2.10.1',
-      'version' => '2.10.1.0',
+      'pretty_version' => 'v2.10.3',
+      'version' => '2.10.3.0',
       'aliases' => 
       array (
       ),
-      'reference' => '0787008cc4aecb0d741a143081cb5038b4a4fd43',
+      'reference' => 'dd2c58863e830c22a2c6b85af63f37b829d255df',
     ),
     'nette/application' => 
     array (
-      'pretty_version' => 'v3.1.1',
-      'version' => '3.1.1.0',
+      'pretty_version' => 'v3.1.2',
+      'version' => '3.1.2.0',
       'aliases' => 
       array (
       ),
-      'reference' => '891dd7d333c61687fe15cb305a30bce33fc2a748',
+      'reference' => 'f817a0b738a3190efe1e573a099d1a80797e156b',
     ),
     'nette/bootstrap' => 
     array (
@@ -125,48 +125,48 @@ private static $installed = array (
     ),
     'nette/forms' => 
     array (
-      'pretty_version' => 'v3.1.0',
-      'version' => '3.1.0.0',
+      'pretty_version' => 'v3.1.2',
+      'version' => '3.1.2.0',
       'aliases' => 
       array (
       ),
-      'reference' => '2fce9b9164166254babe042cd7d11214339fe3c9',
+      'reference' => '54858a9eeb0c57c316a07cea5aa2fa135c6807ac',
     ),
     'nette/http' => 
     array (
-      'pretty_version' => 'v3.1.0',
-      'version' => '3.1.0.0',
+      'pretty_version' => 'v3.1.1',
+      'version' => '3.1.1.0',
       'aliases' => 
       array (
       ),
-      'reference' => 'e791a0069c33f031f6a8e3f766e6c8155219140a',
+      'reference' => 'c903d0f0b793ed2045a442f338e756e1d3954c22',
     ),
     'nette/mail' => 
     array (
-      'pretty_version' => 'v3.1.5',
-      'version' => '3.1.5.0',
+      'pretty_version' => 'v3.1.6',
+      'version' => '3.1.6.0',
       'aliases' => 
       array (
       ),
-      'reference' => 'e072486ef2dbb533189f36a53c020f06b7659f4f',
+      'reference' => 'd5035afcb733ff76b353b8a126a1a6fd560005de',
     ),
     'nette/neon' => 
     array (
-      'pretty_version' => 'v3.2.1',
-      'version' => '3.2.1.0',
+      'pretty_version' => 'v3.2.2',
+      'version' => '3.2.2.0',
       'aliases' => 
       array (
       ),
-      'reference' => 'a5b3a60833d2ef55283a82d0c30b45d136b29e75',
+      'reference' => 'e4ca6f4669121ca6876b1d048c612480e39a28d5',
     ),
     'nette/php-generator' => 
     array (
-      'pretty_version' => 'v3.5.2',
-      'version' => '3.5.2.0',
+      'pretty_version' => 'v3.5.3',
+      'version' => '3.5.3.0',
       'aliases' => 
       array (
       ),
-      'reference' => '41dcc5d1cb322835e5950a76515166c90923c6b7',
+      'reference' => '119f01a7bd590469cb01b538f20a125a28853626',
     ),
     'nette/robot-loader' => 
     array (
@@ -179,12 +179,12 @@ private static $installed = array (
     ),
     'nette/routing' => 
     array (
-      'pretty_version' => 'v3.0.1',
-      'version' => '3.0.1.0',
+      'pretty_version' => 'v3.0.2',
+      'version' => '3.0.2.0',
       'aliases' => 
       array (
       ),
-      'reference' => 'd989c52fa70708816253f2adab7f57ba039a4b4f',
+      'reference' => '5532e7e3612e13def357f089c1a5c25793a16843',
     ),
     'nette/schema' => 
     array (
@@ -206,12 +206,12 @@ private static $installed = array (
     ),
     'nette/tester' => 
     array (
-      'pretty_version' => 'v2.3.4',
-      'version' => '2.3.4.0',
+      'pretty_version' => 'v2.3.5',
+      'version' => '2.3.5.0',
       'aliases' => 
       array (
       ),
-      'reference' => '81b37035240d5c41b71ff4016ad9f8d532fb54be',
+      'reference' => '86d0e32ac2011c734d8def8e90ec65522b644bc4',
     ),
     'nette/utils' => 
     array (
@@ -229,7 +229,7 @@ private static $installed = array (
       'aliases' => 
       array (
       ),
-      'reference' => 'b27ef1855ba91e749e2e368925b77c13d0e52810',
+      'reference' => '374a9b4da36ad63c850298ce17e6ba702f9fdb33',
     ),
     'symfony/thanks' => 
     array (
@@ -242,12 +242,12 @@ private static $installed = array (
     ),
     'tracy/tracy' => 
     array (
-      'pretty_version' => 'v2.8.2',
-      'version' => '2.8.2.0',
+      'pretty_version' => 'v2.8.3',
+      'version' => '2.8.3.0',
       'aliases' => 
       array (
       ),
-      'reference' => '7794de6c53ee85f24cf8d7fa79a9ba32441914cd',
+      'reference' => '342674bbf72365e8456de9855a8cd839ca695933',
     ),
   ),
 );
@@ -472,7 +472,6 @@ self::$canGetVendors = method_exists('Composer\Autoload\ClassLoader', 'getRegist
 $installed = array();
 
 if (self::$canGetVendors) {
-
 foreach (ClassLoader::getRegisteredLoaders() as $vendorDir => $loader) {
 if (isset(self::$installedByVendor[$vendorDir])) {
 $installed[] = self::$installedByVendor[$vendorDir];

@@ -4,7 +4,7 @@
 
 namespace Composer\Autoload;
 
-class ComposerStaticInit282f65bd5f240d12c712912b97f1835d
+class ComposerStaticInitf98fcc028a7f82ef90d5711d6e60faaa
 {
     public static $files = array (
         'd507e002f7fce7f0c6dbf1f22edcb902' => __DIR__ . '/..' . '/tracy/tracy/src/Tracy/functions.php',
@@ -360,6 +360,7 @@ class ComposerStaticInit282f65bd5f240d12c712912b97f1835d
         'Nette\\Forms\\Controls\\TextInput' => __DIR__ . '/..' . '/nette/forms/src/Forms/Controls/TextInput.php',
         'Nette\\Forms\\Controls\\UploadControl' => __DIR__ . '/..' . '/nette/forms/src/Forms/Controls/UploadControl.php',
         'Nette\\Forms\\Form' => __DIR__ . '/..' . '/nette/forms/src/Forms/Form.php',
+        'Nette\\Forms\\FormFactory' => __DIR__ . '/..' . '/nette/forms/src/Forms/FormFactory.php',
         'Nette\\Forms\\FormRenderer' => __DIR__ . '/..' . '/nette/forms/src/Forms/FormRenderer.php',
         'Nette\\Forms\\Helpers' => __DIR__ . '/..' . '/nette/forms/src/Forms/Helpers.php',
         'Nette\\Forms\\IControl' => __DIR__ . '/..' . '/nette/forms/src/compatibility.php',
@@ -557,9 +558,9 @@ class ComposerStaticInit282f65bd5f240d12c712912b97f1835d
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
-            $loader->prefixLengthsPsr4 = ComposerStaticInit282f65bd5f240d12c712912b97f1835d::$prefixLengthsPsr4;
-            $loader->prefixDirsPsr4 = ComposerStaticInit282f65bd5f240d12c712912b97f1835d::$prefixDirsPsr4;
-            $loader->classMap = ComposerStaticInit282f65bd5f240d12c712912b97f1835d::$classMap;
+            $loader->prefixLengthsPsr4 = ComposerStaticInitf98fcc028a7f82ef90d5711d6e60faaa::$prefixLengthsPsr4;
+            $loader->prefixDirsPsr4 = ComposerStaticInitf98fcc028a7f82ef90d5711d6e60faaa::$prefixDirsPsr4;
+            $loader->classMap = ComposerStaticInitf98fcc028a7f82ef90d5711d6e60faaa::$classMap;
 
         }, null, ClassLoader::class);
     }
