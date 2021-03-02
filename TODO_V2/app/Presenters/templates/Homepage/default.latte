@@ -2,7 +2,9 @@
 	<h1 n:block="title">TO DO:</h1>
 
     <div n:foreach="$items as $item" class="item">
-        <div class="task">{$item->task}{$item->created_at|date: '%d.%m.%Y'}</div>
+        <div class="task">
+            <p>{$item->task} {$item->created_at|date: '%d.%m.%Y'}</p>
+        </div>
     </div>
 
 {/block}
