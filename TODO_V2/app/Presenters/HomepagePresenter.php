@@ -20,8 +20,7 @@ final class HomepagePresenter extends Nette\Application\UI\Presenter
     public function renderDefault(): void
     {
 	$this->template->items = $this->database->table('items')
-		->order('created_at DESC')
-		->limit(5);
+		->order('created_at DESC');
     }
 
     protected function createComponentMyForm(): Form 
@@ -36,11 +35,15 @@ final class HomepagePresenter extends Nette\Application\UI\Presenter
     public function formSucceeded(FORM $form): void
     {
         $values = $form->getValues();
-        $database->query('INSERT INTO items',[ //ako sa odkazat na $database?
+        $this->database->query('INSERT INTO items',[ 
             'task' => $values['task'],
             'created_at' => $this->database::literal('NOW()'), 
-            'due_date' => $this->database::literal('NOW()') //pridat funckionalitu 
+            'due_date' => $this->database::literal('NOW()') 
         ]);
     }
 
+//ako sa odkazat na $database?
+//pridat funckionalitu na due_date, status 
+//ako spravne zakomponovat dibi?
+//ako presunut databazove dotazy a konstruktory do model vrstvy?
 }
