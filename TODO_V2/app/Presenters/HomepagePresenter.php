@@ -26,7 +26,7 @@ final class HomepagePresenter extends Nette\Application\UI\Presenter
     protected function createComponentMyForm(): Form 
     {
         $form = new Form();
-        $form->addText('task')
+        $form->addText('task');
         $form->addSubmit('send', 'Create');
         $form->onSuccess[] = [$this, 'formSucceeded'];
         return $form;
@@ -40,10 +40,13 @@ final class HomepagePresenter extends Nette\Application\UI\Presenter
             'created_at' => $this->database::literal('NOW()'), 
             'due_date' => $this->database::literal('NOW()') 
         ]);
+        $this->redirect("this");
+
     }
 
 //ako sa odkazat na $database?
 //pridat funckionalitu na due_date, status 
 //ako spravne zakomponovat dibi?
 //ako presunut databazove dotazy a konstruktory do model vrstvy?
+
 }
