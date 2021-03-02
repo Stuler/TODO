@@ -26,7 +26,7 @@ final class HomepagePresenter extends Nette\Application\UI\Presenter
     protected function createComponentMyForm(): Form 
     {
         $form = new Form();
-        $form->addText('task','Create task here');
+        $form->addText('task')
         $form->addSubmit('send', 'Create');
         $form->onSuccess[] = [$this, 'formSucceeded'];
         return $form;
