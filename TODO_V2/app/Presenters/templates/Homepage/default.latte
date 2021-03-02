@@ -3,7 +3,7 @@
 
     <div n:foreach="$items as $item" class="item">
         <div class="task">
-            <p>{$item->task} {$item->created_at|date: '%d.%m.%Y'}</p>
+            <p><b>{$item->task}</b> {$item->created_at|date: '%d.%m.%Y'}</p>
         </div>
     </div>
 
