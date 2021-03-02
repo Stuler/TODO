@@ -36,13 +36,11 @@ final class HomepagePresenter extends Nette\Application\UI\Presenter
     public function formSucceeded(FORM $form): void
     {
         $values = $form->getValues();
-        $database->query('INSERT INTO items',[
+        $database->query('INSERT INTO items',[ //ako sa odkazat na $database?
             'task' => $values['task'],
-            'created_at' => $this->database::literal('NOW()'),
-            'due_date' => $this->database::literal('NOW()')
+            'created_at' => $this->database::literal('NOW()'), 
+            'due_date' => $this->database::literal('NOW()') //pridat funckionalitu 
         ]);
     }
-
-
 
 }
