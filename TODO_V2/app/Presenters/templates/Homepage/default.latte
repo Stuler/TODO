@@ -19,7 +19,7 @@
             </thead>
             <tbody n:foreach="$items as $item">
                 <tr class="table-dark col-sm-2">
-                    <th scope="row"> <a href="{link delete! id=>$item[id]}">X</a></th>
+                    <th scope="row"><a n:href="delete! $item->id">X</a></th>
                     <td><b>{$item->task}</b></td>
                     <td>{$item->created_at|date: '%d.%m.%Y'}</td>
                     <td>{$item->due_date|date: '%d.%m.%Y'}

@@ -45,8 +45,8 @@ final class HomepagePresenter extends Nette\Application\UI\Presenter
         
     }
 
-    public function handleDelete() {
-        $id = $this->getParameter("id");
+    public function handleDelete($id) {
+        //$id = $this->getParameter("id");
         $this->database->query("DELETE FROM items WHERE id=?", $id);
         $this->redirect("this");
     }
