@@ -5,3 +5,8 @@ database:
 	dsn: 'mysql:host=127.0.0.1;dbname=todo'
 	user: root
 	password: root
+
+extensions:
+	dibi: Dibi\Bridges\Nette\DibiExtension22
+
+

@@ -1,10 +1,32 @@
 {block content}
-	<h1 n:block="title">TO DO:</h1>
+    <div class="jumbotron col-sm-3">
 
-    <div n:foreach="$items as $item" class="item">
-        <div class="task">
-            <p><b>{$item->task}</b> {$item->created_at|date: '%d.%m.%Y'}</p>
-        </div>
+	<div class="myForm ">
+		{control myForm}
+	</div>
+
+    <div>
+        <h1 n:block="title">TO DO:</h1>
+
+        <table class="table table-hover">
+            <thead>
+                <tr>
+                    <th scope="col"></th>
+                    <th scope="col">Task</th>
+                    <th scope="col">Created</th>
+                    <th scope="col">Complete by</th>
+                </tr>
+            </thead>
+            <tbody n:foreach="$items as $item">
+                <tr class="table-dark col-sm-2">
+                    <th scope="row"> <a href="{link delete! id=>$item[id]}">X</a></th>
+                    <td><b>{$item->task}</b></td>
+                    <td>{$item->created_at|date: '%d.%m.%Y'}</td>
+                    <td>{$item->due_date|date: '%d.%m.%Y'}
+                </tr>
+            </tbody>
+        </table>
+    </div>
     </div>
 
 {/block}

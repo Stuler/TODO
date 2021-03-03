@@ -23,10 +23,11 @@ final class HomepagePresenter extends Nette\Application\UI\Presenter
 		->order('created_at DESC');
     }
 
-    protected function createComponentMyForm(): Form 
+    public function createComponentMyForm()
     {
         $form = new Form();
-        $form->addText('task');
+        $form->addText('task')
+            ->setRequired("Cannot enter empty task!");
         $form->addSubmit('send', 'Create');
         $form->onSuccess[] = [$this, 'formSucceeded'];
         return $form;
@@ -41,7 +42,13 @@ final class HomepagePresenter extends Nette\Application\UI\Presenter
             'due_date' => $this->database::literal('NOW()') 
         ]);
         $this->redirect("this");
+        
+    }
 
+    public function handleDelete() {
+        $id = $this->getParameter("id");
+        $this->database->query("DELETE FROM items WHERE id=?", $id);
+        $this->redirect("this");
     }
 
 //ako sa odkazat na $database?
