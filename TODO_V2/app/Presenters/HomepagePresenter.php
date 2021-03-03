@@ -42,7 +42,6 @@ final class HomepagePresenter extends Nette\Application\UI\Presenter
             'due_date' => $this->database::literal('NOW()') 
         ]);
         $this->redirect("this");
-        
     }
 
     public function handleDelete($id) {
