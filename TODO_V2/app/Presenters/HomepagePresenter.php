@@ -32,7 +32,8 @@ final class HomepagePresenter extends Nette\Application\UI\Presenter
             ->setRequired("Cannot enter empty task!");
 
         $form->addText('due_date')
-            ->setHtmlAttribute('placeholder', 'Ented deadline [dd.mm.YYYY]');
+            ->setHtmlAttribute('placeholder', 'Enter deadline [dd.mm.YYYY]')
+            ->setHtmlType('datetime-local');
 
         $form->addSubmit('send', 'Create');
 

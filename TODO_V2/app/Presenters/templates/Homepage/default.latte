@@ -27,8 +27,8 @@
                             <th scope="row"><a n:href="update! $item->id">C</a></th>
                             <td><a n:href="delete! $item->id">X</a></td>
                             <td><b>{$item->task}</b></td>
-                            <td>{$item->created_at|date: '%d.%m.%Y'}</td>
-                            <td>{$item->due_date|date: '%d.%m.%Y'}
+                            <td>{$item->created_at|date: '%d. %h. %Y'}</td>
+                            <td>{$item->due_date|date: '%d. %h. %Y'}
                         </tr>
                     {/if}
                 {/foreach}
@@ -58,8 +58,8 @@
                             <tr class="table-light col-sm-2">
                                 <td><a n:href="delete! $item->id">X</a></td>
                                 <td><b>{$item->task}</b></td>
-                                <td>{$item->created_at|date: '%d.%m.%Y'}</td>
-                                <td>{$item->due_date|date: '%d.%m.%Y'}
+                                <td>{$item->created_at|date: '%d. %h. %Y'}</td>
+                                <td>{$item->due_date|date: '%d. %h. %Y'}
                             </tr>
                         {/if}
                     {/foreach}
