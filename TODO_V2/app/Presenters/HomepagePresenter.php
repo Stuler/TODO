@@ -26,9 +26,16 @@ final class HomepagePresenter extends Nette\Application\UI\Presenter
     public function createComponentMyForm()
     {
         $form = new Form();
+
         $form->addText('task')
+            ->setHtmlAttribute('placeholder', 'Enter task here')
             ->setRequired("Cannot enter empty task!");
+
+        $form->addText('due_date')
+            ->setHtmlAttribute('placeholder', 'Ented deadline [dd.mm.YYYY]');
+
         $form->addSubmit('send', 'Create');
+
         $form->onSuccess[] = [$this, 'formSucceeded'];
         return $form;
     }
@@ -39,7 +46,7 @@ final class HomepagePresenter extends Nette\Application\UI\Presenter
         $this->database->query('INSERT INTO items',[ 
             'task' => $values['task'],
             'created_at' => $this->database::literal('NOW()'), 
-            'due_date' => $this->database::literal('NOW()') 
+            'due_date' => $values['due_date']
         ]);
         $this->redirect("this");
     }
