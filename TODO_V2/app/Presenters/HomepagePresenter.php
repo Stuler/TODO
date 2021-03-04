@@ -44,6 +44,12 @@ final class HomepagePresenter extends Nette\Application\UI\Presenter
         $this->redirect("this");
     }
 
+    public function handleUpdate($id) {
+        //$id = $this->getParameter("id");
+        $this->database->query("UPDATE items SET status='1' WHERE id=?", $id);
+        $this->redirect("this");
+    }
+
     public function handleDelete($id) {
         //$id = $this->getParameter("id");
         $this->database->query("DELETE FROM items WHERE id=?", $id);

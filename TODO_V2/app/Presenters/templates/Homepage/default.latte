@@ -1,12 +1,41 @@
 {block content}
     <div class="jumbotron col-sm-3">
 
-	<div class="myForm ">
+	<div class="form-group">
 		{control myForm}
 	</div>
 
     <div>
-        <h1 n:block="title">TO DO:</h1>
+        <h3 n:block="title">TO DO:</h3>
+
+        <table class="table table-hover">
+            <thead>
+                <tr>
+                    <th scope="col"></th>
+                    <th scope="col"></th>
+                    <th scope="col">Task</th>
+                    <th scope="col">Created</th>
+                    <th scope="col">Complete by</th>
+                </tr>
+            </thead>
+            <tbody>
+                {foreach $items as $item}
+                    {if !$item["status"]}
+                        <tr class="table-dark col-sm-2">
+                            <th scope="row"><a n:href="update! $item->id">C</a></th>
+                            <td><a n:href="delete! $item->id">X</a></td>
+                            <td><b>{$item->task}</b></td>
+                            <td>{$item->created_at|date: '%d.%m.%Y'}</td>
+                            <td>{$item->due_date|date: '%d.%m.%Y'}
+                        </tr>
+                    {/if}
+                {/foreach}
+            </tbody>
+        </table>
+    </div>
+
+    <div>
+        <h3 "title">COMPLETED:</h3>
 
         <table class="table table-hover">
             <thead>
@@ -14,19 +43,23 @@
                     <th scope="col"></th>
                     <th scope="col">Task</th>
                     <th scope="col">Created</th>
-                    <th scope="col">Complete by</th>
+                    <th scope="col">Completed</th>
                 </tr>
             </thead>
-            <tbody n:foreach="$items as $item">
-                <tr class="table-dark col-sm-2">
-                    <th scope="row"><a n:href="delete! $item->id">X</a></th>
-                    <td><b>{$item->task}</b></td>
-                    <td>{$item->created_at|date: '%d.%m.%Y'}</td>
-                    <td>{$item->due_date|date: '%d.%m.%Y'}
-                </tr>
+            <tbody>
+                    {foreach $items as $item}
+                        {if $item["status"]}
+                            <tr class="table-light col-sm-2">
+                                <td><a n:href="delete! $item->id">X</a></td>
+                                <td><b>{$item->task}</b></td>
+                                <td>{$item->created_at|date: '%d.%m.%Y'}</td>
+                                <td>{$item->due_date|date: '%d.%m.%Y'}
+                            </tr>
+                        {/if}
+                    {/foreach}
             </tbody>
         </table>
     </div>
-    </div>
+
 
 {/block}
