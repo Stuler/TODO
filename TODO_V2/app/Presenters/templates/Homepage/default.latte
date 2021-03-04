@@ -1,5 +1,5 @@
 {block content}
-    <div class="jumbotron col-sm-3">
+    <div class="jumbotron col-sm-4">
 
 	<div class="form-group">
 		{control myForm}
@@ -23,12 +23,12 @@
             <tbody>
                 {foreach $items as $item}
                     {if !$item["status"]}
-                        <tr class="table-dark col-sm-2">
+                        <tr class="table-dark col-sm-4">
                             <th scope="row"><a n:href="update! $item->id">C</a></th>
                             <td><a n:href="delete! $item->id">X</a></td>
                             <td><b>{$item->task}</b></td>
                             <td>{$item->created_at|date: '%d. %h. %Y'}</td>
-                            <td>{$item->due_date|date: '%d. %h. %Y'}
+                            <td>{$item->due_date|date: '%a, %d. %h. %Y  %H:%I'}
                         </tr>
                     {/if}
                 {/foreach}
@@ -59,7 +59,7 @@
                                 <td><a n:href="delete! $item->id">X</a></td>
                                 <td><b>{$item->task}</b></td>
                                 <td>{$item->created_at|date: '%d. %h. %Y'}</td>
-                                <td>{$item->due_date|date: '%d. %h. %Y'}
+                                <td>{$item->due_date|date: '%a, %d. %h. %Y  %H:%I'}
                             </tr>
                         {/if}
                     {/foreach}
